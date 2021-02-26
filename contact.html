@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<!-- Web Page Metadata -->
+		<meta charset="utf-8">
+
+		<!-- Web Page Title -->
+		<title>Contact - CSIT Library</title>
+		
+		<!-- Web Page Stylesheets -->
+		<link rel="stylesheet" href="css/google-map.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/fonts.css">
+	</head>
+
+	<body>
+		<!-- Page Wrapper -->
+		<div class="page">
+			<!-- Website Header -->
+			<header>
+				<div class="bg_wrap bg_wrap__mod">
+					<div id="stuck_container" class="stuck_container">
+						<div class="container">
+							<div class="brand">
+								<h1 class="brand_name">
+									<a href="index.html">CSIT Library</a>
+								</h1>
+							</div>
+
+							<nav class="nav">
+								<ul class="sf-menu">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="books.html">Books</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="new-books.html">News</a></li>
+									<li class="active"><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<!-- Web Page Content -->
+			<main>
+				<!-- Google Map Widget -->
+				<section>
+					<div class="map">
+						<div id="google-map" class="map_model"></div>
+						<ul class="map_locations">
+							<li data-x="-73.9874068" data-y="40.643180">
+								<p>Physical Address <span>07701234567</span></p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Address Details Section -->
+				<section class="bg01 well-3">
+					<div class="container align wow zoomIn" data-wow-delay="0.2s">
+						<address>
+							<p>Physical Address 36001</p>
+
+							<dl>
+								<dt>Phone Number:</dt>
+								<dd>+964770 123 4567</dd>
+							</dl>
+							<p>E-Mail: <a class="mail" href="mailto:#"><strong>mail@example.com</strong></a></p>
+						</address>
+					</div>
+				</section>
+
+				<!-- Contact Form -->
+				<section class="well-1">
+					<div class="container">
+						<div class="title-wrap">
+							<h4>Section X</h4>
+							<h2>Contact Us</h2>
+						</div>
+
+						<form class="rd-mailform  rd-form text-left" data-form-output="form-output-global" data-form-type="contact" method="post"
+									action="">
+							<div class="row row__offset">
+								<div class="grid_4">
+									<div class="form-wrap">
+										<label class="form-label" for="contact-name">Your Name</label>
+										<input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+									</div>
+								</div>
+								<div class="grid_4">
+									<div class="form-wrap">
+										<label class="form-label" for="contact-phone">Your Phone Number</label>
+										<input class="form-input" id="contact-phone" type="text" name="phone"
+													data-constraints="@Required @PhoneNumber">
+									</div>
+								</div>
+								<div class="grid_4">
+									<div class="form-wrap">
+										<label class="form-label" for="contact-email">Your E-Mail</label>
+										<input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+									</div>
+								</div>
+							</div>
+							<div class="form-wrap">
+								<label class="form-label" for="contact-message">Your Message</label>
+								<textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+							</div>
+							<div class="form-button group-sm">
+								<button class="button btn-line" type="submit">Submit Comment</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+
+			<!-- Website Footer -->
+			<footer class="parallax parallax3 parallax3__foot-mod" data-parallax-speed="-0.5">
+				<div class="container">
+					<p class="font-copyright">
+						All Rights Reserved CSIT - <span id="copyright-year"></span>
+					</p>
+				</div>
+			</footer>
+		</div>
+
+		<div class="snackbars" id="form-output-global"></div>
+		<script src="js/core.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
